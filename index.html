@@ -25,30 +25,24 @@
         <h1>TVMAZE</h1>
     </header>
     <section class="search-container">
-        <input type="text" id="shows-search" placeholder="Buscar Serie." required />
-        <button id="search-button" alt="Boton para Buscar" >Buscar</button>
+        <input type="text" id="shows-search" placeholder="Buscar Serie." aria-label="Campo de búsqueda de series y peliculas" required />
+        <button id="search-button" aria-label="Boton para Buscar" >Buscar</button>
     </section>
-
-    <button id="chatToggleBtn" class="chat-toggle-btn" alt="Boton para Chatboot">💬</button>
-
-    <!-- Contenedor del chat (oculto al inicio) -->
-    <div class="chat-container idden" id="chatContainer">
-        <div class="chat-header">
+    <button id="chatToggleBtn" class="chat-toggle-btn" aria-label="Boton abrir para Chatboot">💬</button>
+    <article class="chat-container idden" id="chatContainer">
+        <section class="chat-header">
             <h2>Asistente Virtual</h2>
-            <button id="closeChatBtn" class="close-btn">✖</button>
-        </div>
-        <div class="chat-box" id="chatBox">
+            <button id="closeChatBtn" class="close-btn" aria-label="Cerrar Chatboot">✖</button>
+        </section>
+        <section class="chat-box" id="chatBox">
             <div class="message bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
-        </div>
-        <div class="chat-input-area">
-            <input type="text" id="userInput" placeholder="Escribe un mensaje..." autocomplete="off">
-            <button id="sendBtn">Enviar</button>
-        </div>
-    </div>
-
-
+        </section>
+        <section class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Escribe un mensaje..." autocomplete="off" aria-label="Campo de entrada para el mensaje del usuario">
+            <button id="sendBtn" aria-label="Boton para Enviar">Enviar</button>
+        </section>
+    </article>
     <main class="show-grid" id="show-grid">
-    <!--Aqui se agrega la info del js -->
     </main>
     <script src="js/main.js"></script>
     <footer>
